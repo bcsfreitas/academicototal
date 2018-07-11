@@ -1,71 +1,91 @@
-<header>
+  <header>
+    <div class="container">
+      <h1 class="logo"></h1>
 
-  <h1 class="logo"></h1>
+      <h2>Integração da família com a escola</h2>
+      <p>Comunicação em tempo real</p>
+      <p>Controle de acesso</p>
 
-  <h2>Integração da família com a escola</h2>
-  <p>Comunicação em tempo real</p>
-  <p>Controle de acesso</p>
-
-  <a href="#" class="botao">Saiba Mais</a>
-
-</header>
-
-<section class="resumo">
-
-  <h3>Mais segurança e comunicação entre a escola e os pais</h3>
-  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-
-</section>
-
-<section class="features">
-
-  <ul>
-    <li *ngFor="let feature of features">
-      <h4>{{ feature.nome }}</h4>
-      <p>{{ feature.descricao }}</p>
-    </li>
-  </ul>
-
-</section>
-
-<section class="beneficios">
-  <div class="beneficio" *ngFor="let lista of beneficios">
-    <h4>{{ lista.nome }}</h4>
-    <ul>
-      <li *ngFor="let beneficio of lista.beneficios">{{ beneficio }}</li>
-    </ul>
-  </div>
-
-</section>
-
-<section class="contagem">
-
-  <div class="nivel">
-
-    <div class="nivel--item">
-      <p class="numero">{{ contagem.alunos }}</p>
-      <p class="nome">Alunos</p>
+      <a href="#" class="botao">Saiba Mais</a>
     </div>
 
-    <div class="nivel--item">
-      <p class="numero">{{ contagem.educadores }}</p>
-      <p class="nome">Educadores</p>
+  </header>
+
+  <section class="section resumo">
+
+    <div class="container">
+      <div class="colunas">
+        <div class="coluna m--grid--estreito">a</div>
+        <div class="coluna">
+          <h3>Mais segurança e comunicação entre a escola e os pais</h3>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        </div>
+      </div>
     </div>
 
-    <div class="nivel--item">
-      <p class="numero">{{ contagem.cidades }}</p>
-      <p class="nome">Cidades</p>
+  </section>
+
+  <section class="section features">
+
+    <div class="container">
+      <ul>
+        <li *ngFor="let feature of features">
+          <h4>{{ feature.nome }}</h4>
+          <p>{{ feature.descricao }}</p>
+        </li>
+      </ul>
     </div>
 
-    <div class="nivel--item">
-      <p class="numero">{{ contagem.escolas }}</p>
-      <p class="nome">Escolas</p>
+  </section>
+
+  <section class="section beneficios">
+
+    <div class="container">
+      <div class="colunas">
+        <div class="beneficio coluna" *ngFor="let lista of beneficios">
+          <h4>{{ lista.nome }}</h4>
+          <ul>
+            <li *ngFor="let beneficio of lista.beneficios">{{ beneficio }}</li>
+          </ul>
+        </div>
+      </div>
     </div>
 
-  </div>
+  </section>
 
-</section>
+  <section class="section contagem">
 
-<section class="contato">
-[[ CONTATO ]]
-</section>
+    <div class="container">
+      <div class="colunas">
+
+        <div class="coluna">
+          <p class="numero">{{ contagem.alunos }}</p>
+          <p class="nome">Alunos</p>
+        </div>
+
+        <div class="coluna">
+          <p class="numero">{{ contagem.educadores }}</p>
+          <p class="nome">Educadores</p>
+        </div>
+
+        <div class="coluna">
+          <p class="numero">{{ contagem.cidades }}</p>
+          <p class="nome">Cidades</p>
+        </div>
+
+        <div class="coluna">
+          <p class="numero">{{ contagem.escolas }}</p>
+          <p class="nome">Escolas</p>
+        </div>
+
+      </div>
+
+      <hr>
+    </div>
+
+  </section>
+
+  <section class="section contato">
+    [[ CONTATO ]]
+  </section>
+
