@@ -1,0 +1,506 @@
+$column-gap: 0.75rem !default
+
+.coluna
+  display: block
+  flex-basis: 0
+  flex-grow: 1
+  flex-shrink: 1
+  padding: $column-gap
+  .colunas.m--mobile > &.m--grid--estreito
+    flex: none
+  .colunas.m--mobile > &.m--grid--cheio
+    flex: none
+    width: 100%
+  .colunas.m--mobile > &.m--grid--tres-quartos
+    flex: none
+    width: 75%
+  .colunas.m--mobile > &.m--grid--dois-tercos
+    flex: none
+    width: 66.6666%
+  .colunas.m--mobile > &.m--grid--metade
+    flex: none
+    width: 50%
+  .colunas.m--mobile > &.m--grid--um-terco
+    flex: none
+    width: 33.3333%
+  .colunas.m--mobile > &.m--grid--um-quarto
+    flex: none
+    width: 25%
+  .colunas.m--mobile > &.m--grid--um-quinto
+    flex: none
+    width: 20%
+  .colunas.m--mobile > &.m--grid--dois-quintos
+    flex: none
+    width: 40%
+  .colunas.m--mobile > &.m--grid--tres-quintos
+    flex: none
+    width: 60%
+  .colunas.m--mobile > &.m--grid--quatro-quintos
+    flex: none
+    width: 80%
+  .colunas.m--mobile > &.m--grid--espacamento-tres-quartos
+    margin-left: 75%
+  .colunas.m--mobile > &.m--grid--espacamento-dois-tercos
+    margin-left: 66.6666%
+  .colunas.m--mobile > &.m--grid--espacamento-metade
+    margin-left: 50%
+  .colunas.m--mobile > &.m--grid--espacamento-um-terco
+    margin-left: 33.3333%
+  .colunas.m--mobile > &.m--grid--espacamento-um-quarto
+    margin-left: 25%
+  .colunas.m--mobile > &.m--grid--espacamento-um-quinto
+    margin-left: 20%
+  .colunas.m--mobile > &.m--grid--espacamento-dois-quintos
+    margin-left: 40%
+  .colunas.m--mobile > &.m--grid--espacamento-tres-quintos
+    margin-left: 60%
+  .colunas.m--mobile > &.m--grid--espacamento-quatro-quintos
+    margin-left: 80%
+
+
+  @for $i from 1 through 12
+    .colunas.m--mobile > &.m--grid--#{$i}
+      flex: none
+      width: percentage($i / 12)
+    .colunas.m--mobile > &.m--grid--espacamento-#{$i}
+      margin-left: percentage($i / 12)
+  +mobile
+    &.m--grid--estreito__mobile
+      flex: none
+    &.m--grid--cheio__mobile
+      flex: none
+      width: 100%
+    &.m--grid--tres-quartos__mobile
+      flex: none
+      width: 75%
+    &.m--grid--dois-tercos__mobile
+      flex: none
+      width: 66.6666%
+    &.m--grid--metade__mobile
+      flex: none
+      width: 50%
+    &.m--grid--um-terco__mobile
+      flex: none
+      width: 33.3333%
+    &.m--grid--um-quarto__mobile
+      flex: none
+      width: 25%
+    &.m--grid--um-quinto__mobile
+      flex: none
+      width: 20%
+    &.m--grid--dois-quintos__mobile
+      flex: none
+      width: 40%
+    &.m--grid--tres-quintos__mobile
+      flex: none
+      width: 60%
+    &.m--grid--quatro-quintos__mobile
+      flex: none
+      width: 80%
+    &.m--grid--espacamento-tres-quartos__mobile
+      margin-left: 75%
+    &.m--grid--espacamento-dois-tercos__mobile
+      margin-left: 66.6666%
+    &.m--grid--espacamento-metade__mobile
+      margin-left: 50%
+    &.m--grid--espacamento-um-terco__mobile
+      margin-left: 33.3333%
+    &.m--grid--espacamento-um-quarto__mobile
+      margin-left: 25%
+    &.m--grid--espacamento-um-quinto__mobile
+      margin-left: 20%
+    &.m--grid--espacamento-dois-quintos__mobile
+      margin-left: 40%
+    &.m--grid--espacamento-tres-quintos__mobile
+      margin-left: 60%
+    &.m--grid--espacamento-quatro-quintos__mobile
+      margin-left: 80%
+    @for $i from 1 through 12
+      &.m--grid--#{$i}__mobile
+        flex: none
+        width: percentage($i / 12)
+      &.m--grid--espacamento-#{$i}__mobile
+        margin-left: percentage($i / 12)
+  +tablet
+    &.m--grid--estreito,
+    &.m--grid--estreito__tablet
+      flex: none
+    &.m--grid--cheio,
+    &.m--grid--cheio__tablet
+      flex: none
+      width: 100%
+    &.m--grid--tres-quartos,
+    &.m--grid--tres-quartos__tablet
+      flex: none
+      width: 75%
+    &.m--grid--dois-tercos,
+    &.m--grid--dois-tercos__tablet
+      flex: none
+      width: 66.6666%
+    &.m--grid--metade,
+    &.m--grid--metade__tablet
+      flex: none
+      width: 50%
+    &.m--grid--um-terco,
+    &.m--grid--um-terco__tablet
+      flex: none
+      width: 33.3333%
+    &.m--grid--um-quarto,
+    &.m--grid--um-quarto__tablet
+      flex: none
+      width: 25%
+    &.m--grid--um-quinto,
+    &.m--grid--um-quinto__tablet
+      flex: none
+      width: 20%
+    &.m--grid--dois-quintos,
+    &.m--grid--dois-quintos__tablet
+      flex: none
+      width: 40%
+    &.m--grid--tres-quintos,
+    &.m--grid--tres-quintos__tablet
+      flex: none
+      width: 60%
+    &.m--grid--quatro-quintos,
+    &.m--grid--quatro-quintos__tablet
+      flex: none
+      width: 80%
+    &.m--grid--espacamento-tres-quartos,
+    &.m--grid--espacamento-tres-quartos__tablet
+      margin-left: 75%
+    &.m--grid--espacamento-dois-tercos,
+    &.m--grid--espacamento-dois-tercos__tablet
+      margin-left: 66.6666%
+    &.m--grid--espacamento-metade,
+    &.m--grid--espacamento-metade__tablet
+      margin-left: 50%
+    &.m--grid--espacamento-um-terco,
+    &.m--grid--espacamento-um-terco__tablet
+      margin-left: 33.3333%
+    &.m--grid--espacamento-um-quarto,
+    &.m--grid--espacamento-um-quarto__tablet
+      margin-left: 25%
+    &.m--grid--espacamento-um-quinto,
+    &.m--grid--espacamento-um-quinto__tablet
+      margin-left: 20%
+    &.m--grid--espacamento-dois-quintos,
+    &.m--grid--espacamento-dois-quintos__tablet
+      margin-left: 40%
+    &.m--grid--espacamento-tres-quintos,
+    &.m--grid--espacamento-tres-quintos__tablet
+      margin-left: 60%
+    &.m--grid--espacamento-quatro-quintos,
+    &.m--grid--espacamento-quatro-quintos__tablet
+      margin-left: 80%
+    @for $i from 1 through 12
+      &.m--grid--#{$i},
+      &.m--grid--#{$i}__tablet
+        flex: none
+        width: percentage($i / 12)
+      &.m--grid--espacamento-#{$i},
+      &.m--grid--espacamento-#{$i}__tablet
+        margin-left: percentage($i / 12)
+  +touch
+    &.m--grid--estreito__touch
+      flex: none
+    &.m--grid--cheio__touch
+      flex: none
+      width: 100%
+    &.m--grid--tres-quartos__touch
+      flex: none
+      width: 75%
+    &.m--grid--dois-tercos__touch
+      flex: none
+      width: 66.6666%
+    &.m--grid--metade__touch
+      flex: none
+      width: 50%
+    &.m--grid--um-terco__touch
+      flex: none
+      width: 33.3333%
+    &.m--grid--um-quarto__touch
+      flex: none
+      width: 25%
+    &.m--grid--um-quinto__touch
+      flex: none
+      width: 20%
+    &.m--grid--dois-quintos__touch
+      flex: none
+      width: 40%
+    &.m--grid--tres-quintos__touch
+      flex: none
+      width: 60%
+    &.m--grid--quatro-quintos__touch
+      flex: none
+      width: 80%
+    &.m--grid--espacamento-tres-quartos__touch
+      margin-left: 75%
+    &.m--grid--espacamento-dois-tercos__touch
+      margin-left: 66.6666%
+    &.m--grid--espacamento-metade__touch
+      margin-left: 50%
+    &.m--grid--espacamento-um-terco__touch
+      margin-left: 33.3333%
+    &.m--grid--espacamento-um-quarto__touch
+      margin-left: 25%
+    &.m--grid--espacamento-um-quinto__touch
+      margin-left: 20%
+    &.m--grid--espacamento-dois-quintos__touch
+      margin-left: 40%
+    &.m--grid--espacamento-tres-quintos__touch
+      margin-left: 60%
+    &.m--grid--espacamento-quatro-quintos__touch
+      margin-left: 80%
+    @for $i from 1 through 12
+      &.m--grid--#{$i}__touch
+        flex: none
+        width: percentage($i / 12)
+      &.m--grid--espacamento-#{$i}__touch
+        margin-left: percentage($i / 12)
+  +desktop
+    &.m--grid--estreito__desktop
+      flex: none
+    &.m--grid--cheio__desktop
+      flex: none
+      width: 100%
+    &.m--grid--tres-quartos__desktop
+      flex: none
+      width: 75%
+    &.m--grid--dois-tercos__desktop
+      flex: none
+      width: 66.6666%
+    &.m--grid--metade__desktop
+      flex: none
+      width: 50%
+    &.m--grid--um-terco__desktop
+      flex: none
+      width: 33.3333%
+    &.m--grid--um-quarto__desktop
+      flex: none
+      width: 25%
+    &.m--grid--um-quinto__desktop
+      flex: none
+      width: 20%
+    &.m--grid--dois-quintos__desktop
+      flex: none
+      width: 40%
+    &.m--grid--tres-quintos__desktop
+      flex: none
+      width: 60%
+    &.m--grid--quatro-quintos__desktop
+      flex: none
+      width: 80%
+    &.m--grid--espacamento-tres-quartos__desktop
+      margin-left: 75%
+    &.m--grid--espacamento-dois-tercos__desktop
+      margin-left: 66.6666%
+    &.m--grid--espacamento-metade__desktop
+      margin-left: 50%
+    &.m--grid--espacamento-um-terco__desktop
+      margin-left: 33.3333%
+    &.m--grid--espacamento-um-quarto__desktop
+      margin-left: 25%
+    &.m--grid--espacamento-um-quinto__desktop
+      margin-left: 20%
+    &.m--grid--espacamento-dois-quintos__desktop
+      margin-left: 40%
+    &.m--grid--espacamento-tres-quintos__desktop
+      margin-left: 60%
+    &.m--grid--espacamento-quatro-quintos__desktop
+      margin-left: 80%
+    @for $i from 1 through 12
+      &.m--grid--#{$i}__desktop
+        flex: none
+        width: percentage($i / 12)
+      &.m--grid--espacamento-#{$i}__desktop
+        margin-left: percentage($i / 12)
+  +widescreen
+    &.m--grid--estreito__widescreen
+      flex: none
+    &.m--grid--cheio__widescreen
+      flex: none
+      width: 100%
+    &.m--grid--tres-quartos__widescreen
+      flex: none
+      width: 75%
+    &.m--grid--dois-tercos__widescreen
+      flex: none
+      width: 66.6666%
+    &.m--grid--metade__widescreen
+      flex: none
+      width: 50%
+    &.m--grid--um-terco__widescreen
+      flex: none
+      width: 33.3333%
+    &.m--grid--um-quarto__widescreen
+      flex: none
+      width: 25%
+    &.m--grid--um-quinto__widescreen
+      flex: none
+      width: 20%
+    &.m--grid--dois-quintos__widescreen
+      flex: none
+      width: 40%
+    &.m--grid--tres-quintos__widescreen
+      flex: none
+      width: 60%
+    &.m--grid--quatro-quintos__widescreen
+      flex: none
+      width: 80%
+    &.m--grid--espacamento-tres-quartos__widescreen
+      margin-left: 75%
+    &.m--grid--espacamento-dois-tercos__widescreen
+      margin-left: 66.6666%
+    &.m--grid--espacamento-metade__widescreen
+      margin-left: 50%
+    &.m--grid--espacamento-um-terco__widescreen
+      margin-left: 33.3333%
+    &.m--grid--espacamento-um-quarto__widescreen
+      margin-left: 25%
+    &.m--grid--espacamento-um-quinto__widescreen
+      margin-left: 20%
+    &.m--grid--espacamento-dois-quintos__widescreen
+      margin-left: 40%
+    &.m--grid--espacamento-tres-quintos__widescreen
+      margin-left: 60%
+    &.m--grid--espacamento-quatro-quintos__widescreen
+      margin-left: 80%
+    @for $i from 1 through 12
+      &.m--grid--#{$i}__widescreen
+        flex: none
+        width: percentage($i / 12)
+      &.m--grid--espacamento-#{$i}__widescreen
+        margin-left: percentage($i / 12)
+  +fullhd
+    &.m--grid--estreito__fullhd
+      flex: none
+    &.m--grid--cheio__fullhd
+      flex: none
+      width: 100%
+    &.m--grid--tres-quartos__fullhd
+      flex: none
+      width: 75%
+    &.m--grid--dois-tercos__fullhd
+      flex: none
+      width: 66.6666%
+    &.m--grid--metade__fullhd
+      flex: none
+      width: 50%
+    &.m--grid--um-terco__fullhd
+      flex: none
+      width: 33.3333%
+    &.m--grid--um-quarto__fullhd
+      flex: none
+      width: 25%
+    &.m--grid--um-quinto__fullhd
+      flex: none
+      width: 20%
+    &.m--grid--dois-quintos__fullhd
+      flex: none
+      width: 40%
+    &.m--grid--tres-quintos__fullhd
+      flex: none
+      width: 60%
+    &.m--grid--quatro-quintos__fullhd
+      flex: none
+      width: 80%
+    &.m--grid--espacamento-tres-quartos__fullhd
+      margin-left: 75%
+    &.m--grid--espacamento-dois-tercos__fullhd
+      margin-left: 66.6666%
+    &.m--grid--espacamento-metade__fullhd
+      margin-left: 50%
+    &.m--grid--espacamento-um-terco__fullhd
+      margin-left: 33.3333%
+    &.m--grid--espacamento-um-quarto__fullhd
+      margin-left: 25%
+    &.m--grid--espacamento-um-quinto__fullhd
+      margin-left: 20%
+    &.m--grid--espacamento-dois-quintos__fullhd
+      margin-left: 40%
+    &.m--grid--espacamento-tres-quintos__fullhd
+      margin-left: 60%
+    &.m--grid--espacamento-quatro-quintos__fullhd
+      margin-left: 80%
+    @for $i from 1 through 12
+      &.m--grid--#{$i}__fullhd
+        flex: none
+        width: percentage($i / 12)
+      &.m--grid--espacamento-#{$i}__fullhd
+        margin-left: percentage($i / 12)
+
+.colunas
+  margin-left: (-$column-gap)
+  margin-right: (-$column-gap)
+  margin-top: (-$column-gap)
+  &:last-child
+    margin-bottom: (-$column-gap)
+  &:not(:last-child)
+    margin-bottom: calc(1.5rem - #{$column-gap})
+  // Modifiers
+  &.m--grid--centered
+    justify-content: center
+  &.m--grid--gapless
+    margin-left: 0
+    margin-right: 0
+    margin-top: 0
+    & > .coluna
+      margin: 0
+      padding: 0 !important
+    &:not(:last-child)
+      margin-bottom: 1.5rem
+    &:last-child
+      margin-bottom: 0
+  &.m--mobile
+    display: flex
+  &.m--grid--multiline
+    flex-wrap: wrap
+  &.m--grid--vcentered
+    align-items: center
+  // Responsiveness
+  +tablet
+    &:not(.m--grid--desktop)
+      display: flex
+  +desktop
+    // Modifiers
+    &.m--grid--desktop
+      display: flex
+
+@if $variable-colunas
+  .colunas.m--grid--variable
+    --columnGap: 0.75rem
+    margin-left: calc(-1 * var(--columnGap))
+    margin-right: calc(-1 * var(--columnGap))
+    .coluna
+      padding-left: var(--columnGap)
+      padding-right: var(--columnGap)
+    @for $i from 0 through 8
+      &.m--grid--#{$i}
+        --columnGap: #{$i * 0.25rem}
+      +mobile
+        &.m--grid--#{$i}__mobile
+          --columnGap: #{$i * 0.25rem}
+      +tablet
+        &.m--grid--#{$i}__tablet
+          --columnGap: #{$i * 0.25rem}
+      +tablet-only
+        &.m--grid--#{$i}__tablet-only
+          --columnGap: #{$i * 0.25rem}
+      +touch
+        &.m--grid--#{$i}__touch
+          --columnGap: #{$i * 0.25rem}
+      +desktop
+        &.m--grid--#{$i}__desktop
+          --columnGap: #{$i * 0.25rem}
+      +desktop-only
+        &.m--grid--#{$i}__desktop-only
+          --columnGap: #{$i * 0.25rem}
+      +widescreen
+        &.m--grid--#{$i}__widescreen
+          --columnGap: #{$i * 0.25rem}
+      +widescreen-only
+        &.m--grid--#{$i}__widescreen-only
+          --columnGap: #{$i * 0.25rem}
+      +fullhd
+        &.m--grid--#{$i}__fullhd
+          --columnGap: #{$i * 0.25rem}

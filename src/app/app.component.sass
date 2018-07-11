@@ -1,18 +1,93 @@
-$cinzaClaro: #FAFAFA !default
+$cor--cinzaClaro: #FAFAFA !default
+$cor--amarelo: #E3E602 !default
+$cor--vermelho: #D33131 !default
+$cor--verde: #8EE000 !default
+$cor--laranja: #FFB020 !default
 
+$cores: ("cinzaClaro": $cor--cinzaClaro, "amarelo": $cor--amarelo, "vermelho": $cor--vermelho, "verde": $cor--verde, "laranja": $cor--laranja) !default
+
+// The container horizontal gap, which acts as the offset for breakpoints
+$gap: 64px !default
+// 960, 1152, and 1344 have been chosen because they are divisible by both 12 and 16
+$tablet: 769px !default
+// 960px container + 4rem
+$desktop: 960px + (2 * $gap) !default
+// 1152px container + 4rem
+$widescreen: 1152px + (2 * $gap) !default
+$widescreen-enabled: true !default
+// 1344px container + 4rem
+$fullhd: 1344px + (2 * $gap) !default
+$fullhd-enabled: true !default
+
+// Flags
+
+$variable-colunas: true !default
+
+
+@import './src/assets/fonts/museo-sans/font.sass'
+@import './minireset'
+@import './functions'
+@import './mixins'
+@import './colunas'
+
+.botao
+  +controle
+  border-radius: 98px
+  padding: 9px 21px
+  cursor: pointer
+
+  font-weight: 700
+  font-size: 15px
+
+  text-align: center
+  text-decoration: none
+  text-transform: uppercase
+
+  justify-content: center
+  vertical-align: middle
+  white-space: nowrap
+
+  background-color: $cor--amarelo
+  color: findColorInvert($cor--amarelo)
+
+  // Cores
+  @each $nomeCor, $cor in $cores
+    &.m--cor--#{$nomeCor}
+      background-color: $cor
+      color: findColorInvert($cor)
+
+
+.container
+  margin: 0 auto
+  position: relative
+  +desktop
+    max-width: $desktop - (2 * $gap)
+    width: $desktop - (2 * $gap)
+    &.m--fluido
+      margin-left: $gap
+      margin-right: $gap
+      max-width: none
+      width: auto
+  +until-widescreen
+    &.m--widescreen
+      max-width: $widescreen - (2 * $gap)
+      width: auto
+  +until-fullhd
+    &.m--fullhd
+      max-width: $fullhd - (2 * $gap)
+      width: auto
+  +widescreen
+    max-width: $widescreen - (2 * $gap)
+    width: $widescreen - (2 * $gap)
+  +fullhd
+    max-width: $fullhd - (2 * $gap)
+    width: $fullhd - (2 * $gap)
+
+.section
+  padding: 3rem 1.5rem
+
+// Sections
 .resumo,
 .beneficios
-  background: $cinzaClaro
-  padding: 70px 0
+  background: $cor--cinzaClaro
   margin: 140px 0
-
-.beneficios
-  display: flex
-
-  .beneficio
-    padding: 0 20px
-
-    &:first-child
-      padding-left: 0
-    &:last-child
-      padding-right: 0
