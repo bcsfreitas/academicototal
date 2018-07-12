@@ -6,3 +6,9 @@ body {
   font-family: 'MuseoSansRounded', Helvetica, Arial, sans-serif;
   text-rendering: optimizeLegibility;
 }
+hr {
+  border: none;
+  border-radius: 100px;
+  height: 4px;
+  background-color: #E6E6E6 ;
+}

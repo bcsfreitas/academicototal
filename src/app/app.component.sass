@@ -1,10 +1,11 @@
 $cor--cinzaClaro: #FAFAFA !default
+$cor--cinza: #9B9B9B !default
 $cor--amarelo: #E3E602 !default
 $cor--vermelho: #D33131 !default
 $cor--verde: #8EE000 !default
 $cor--laranja: #FFB020 !default
 
-$cores: ("cinzaClaro": $cor--cinzaClaro, "amarelo": $cor--amarelo, "vermelho": $cor--vermelho, "verde": $cor--verde, "laranja": $cor--laranja) !default
+$cores: ("cinzaClaro": $cor--cinzaClaro, "cinza": $cor--cinza, "amarelo": $cor--amarelo, "vermelho": $cor--vermelho, "verde": $cor--verde, "laranja": $cor--laranja) !default
 
 // The container horizontal gap, which acts as the offset for breakpoints
 $gap: 64px !default
@@ -55,6 +56,11 @@ $variable-colunas: true !default
     &.m--cor--#{$nomeCor}
       background-color: $cor
       color: findColorInvert($cor)
+
+
+@each $nomeCor, $cor in $cores
+  .m--cor-texto--#{$nomeCor}
+    color: $cor
 
 
 .container
@@ -116,6 +122,24 @@ $variable-colunas: true !default
     text-align: center
     background-position-y: 0px
     background-size: 220%
+
+
 .resumo
   h3.titulo
     font-size: 26px
+
+
+.contagem
+  p
+    margin: 0
+  .numero
+    font-size: 50px
+    font-weight: 700
+
+
+  .nome
+    font-size: 30px
+    text-transform: uppercase
+
+  +touch
+    text-align: center
