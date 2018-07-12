@@ -90,4 +90,32 @@ $variable-colunas: true !default
 .resumo,
 .beneficios
   background: $cor--cinzaClaro
-  margin: 140px 0
+  // margin: 140px 0
+
+.header
+  background: url("../assets/img/bg-header.svg") top right no-repeat
+  background-position-y: -145px
+  background-size: 80%
+
+  h1.logo a
+    display: inline-block
+
+  h2.slogan
+    font-size: 50px
+    line-height: 57px
+    font-weight: 700
+    margin-bottom: 15px
+    +touch
+      font-size: 22px
+      line-height: 25px
+
+  .ilustracao
+    margin-bottom: -60px
+
+  +touch
+    text-align: center
+    background-position-y: 0px
+    background-size: 220%
+.resumo
+  h3.titulo
+    font-size: 26px
