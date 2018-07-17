@@ -1,0 +1,121 @@
+$alinhamentos: ('centralizado': 'center', 'justificado': 'justify', 'left': 'left', 'right': 'right')
+
+@each $alinhamento, $text-align in $alinhamentos
+  .m--alinhamento-texto__#{$alinhamento}
+    text-align: #{$text-align} !important
+
+@each $alinhamento, $text-align in $alinhamentos
+  +mobile
+    .m--alinhamento-texto__#{$alinhamento}-mobile
+      text-align: #{$text-align} !important
+  +tablet
+    .m--alinhamento-texto__#{$alinhamento}-tablet
+      text-align: #{$text-align} !important
+  +tablet-only
+    .m--alinhamento-texto__#{$alinhamento}-tablet-only
+      text-align: #{$text-align} !important
+  +touch
+    .m--alinhamento-texto__#{$alinhamento}-touch
+      text-align: #{$text-align} !important
+  +desktop
+    .m--alinhamento-texto__#{$alinhamento}-desktop
+      text-align: #{$text-align} !important
+  +desktop-only
+    .m--alinhamento-texto__#{$alinhamento}-desktop-only
+      text-align: #{$text-align} !important
+  +widescreen
+    .m--alinhamento-texto__#{$alinhamento}-widescreen
+      text-align: #{$text-align} !important
+  +widescreen-only
+    .m--alinhamento-texto__#{$alinhamento}-widescreen-only
+      text-align: #{$text-align} !important
+  +fullhd
+    .m--alinhamento-texto__#{$alinhamento}-fullhd
+      text-align: #{$text-align} !important
+
+.m--estilo-texto__capitalized
+  text-transform: capitalize !important
+
+.m--estilo-texto__lowercase
+  text-transform: lowercase !important
+
+.m--estilo-texto__uppercase
+  text-transform: uppercase !important
+
+.m--estilo-texto__italic
+  font-style: italic !important
+
+
+// Visibilidade
+
+$displays: 'block' 'flex' 'inline' 'inline-block' 'inline-flex'
+
+@each $display in $displays
+  .m--display__#{$display}
+    display: #{$display} !important
+  +mobile
+    .m--display__#{$display}-mobile
+      display: #{$display} !important
+  +tablet
+    .m--display__#{$display}-tablet
+      display: #{$display} !important
+  +tablet-only
+    .m--display__#{$display}-tablet-only
+      display: #{$display} !important
+  +touch
+    .m--display__#{$display}-touch
+      display: #{$display} !important
+  +desktop
+    .m--display__#{$display}-desktop
+      display: #{$display} !important
+  +desktop-only
+    .m--display__#{$display}-desktop-only
+      display: #{$display} !important
+  +widescreen
+    .m--display__#{$display}-widescreen
+      display: #{$display} !important
+  +widescreen-only
+    .m--display__#{$display}-widescreen-only
+      display: #{$display} !important
+  +fullhd
+    .m--display__#{$display}-fullhd
+      display: #{$display} !important
+
+.m--visibilidade__escondido
+  display: none !important
+
++mobile
+  .m--visibilidade__escondido-mobile
+    display: none !important
+
++tablet
+  .m--visibilidade__escondido-tablet
+    display: none !important
+
++tablet-only
+  .m--visibilidade__escondido-tablet-only
+    display: none !important
+
++touch
+  .m--visibilidade__escondido-touch
+    display: none !important
+
++desktop
+  .m--visibilidade__escondido-desktop
+    display: none !important
+
++desktop-only
+  .m--visibilidade__escondido-desktop-only
+    display: none !important
+
++widescreen
+  .m--visibilidade__escondido-widescreen
+    display: none !important
+
++widescreen-only
+  .m--visibilidade__escondido-widescreen-only
+    display: none !important
+
++fullhd
+  .m--visibilidade__escondido-fullhd
+    display: none !important

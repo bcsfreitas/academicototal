@@ -32,6 +32,7 @@ $variable-colunas: true !default
 @import './colunas'
 @import './tipografia'
 @import './imagens'
+@import './helpers'
 
 .botao
   +controle
@@ -94,6 +95,8 @@ $variable-colunas: true !default
 .section
   padding: 3rem 1.5rem
 
+
+
 // Sections
 .resumo,
 .beneficios
@@ -101,6 +104,10 @@ $variable-colunas: true !default
   // margin: 140px 0
 
 .features
+  li
+    margin-top: 80px
+  h4
+    margin-top: 0
   +mobile
     text-align: center
 
@@ -133,6 +140,22 @@ $variable-colunas: true !default
 .resumo
   h3.titulo
     font-size: 26px
+  +mobile
+    text-align: center
+
+.beneficios li
+  position: relative
+  padding-left: 13px
+
+  &:before
+    position: absolute
+    content: ''
+    width: 5px
+    height: 5px
+    background-color: $cor--cinza
+    border-radius: 100px
+    top: 6px
+    left: 0
 
 
 .contagem

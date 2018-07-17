@@ -7,105 +7,150 @@
       </h1>
       <div class="colunas">
         <div class="coluna">
-            <h2 class="titulo--tamanho__grande">Integração da família com a escola</h2>
-            <p>Comunicação em tempo real <br />
-              Controle de acesso</p>
+          <h2 class="titulo--tamanho__grande">Integração da família com a escola</h2>
+          <p>Comunicação em tempo real <br />
+            Controle de acesso</p>
 
             <a href="#" style="min-width: 200px" class="botao">Saiba Mais</a>
-        </div>
-        <div class="coluna">
+          </div>
+          <div class="coluna">
             <img src="assets/img/ilu.svg" class="ilustracao" alt="">
-        </div>
-      </div>
-
-
-    </div>
-
-  </header>
-
-  <section class="section resumo">
-
-    <div class="container">
-      <div class="colunas">
-        <div class="coluna m--grid--estreito">a</div>
-        <div class="coluna">
-          <h3 class="titulo--tamanho__medio">Mais segurança e comunicação entre a escola e os pais</h3>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-        </div>
-      </div>
-    </div>
-
-  </section>
-
-  <section class="section features">
-
-    <div class="container">
-      <h1 class="titulo--tamanho__grande">Controle para os responsáveis</h1>
-      <ul>
-        <li *ngFor="let feature of features">
-          <figure class="imagem m--tamanho__96x96">
-            <img src="assets/img/icone--{{ feature.icone }}.svg" alt="">
-          </figure>
-          <h4 class="titulo--tamanho__pequeno">{{ feature.nome }}</h4>
-          <p>{{ feature.descricao }}</p>
-        </li>
-      </ul>
-    </div>
-
-  </section>
-
-  <section class="section beneficios">
-
-    <div class="container">
-      <div style="text-align: center">
-        <p class="titulo--tamanho__medio">Benefícios Múltiplos para Todas as Partes</p>
-        <p>Resultados comprovados de redução de custos operacionais, aumento na eficiência do controle disciplinar e aumento da participação dos pais e responsáveis no ambiente escolar.</p>
-      </div>
-      <div class="colunas">
-        <div class="beneficio coluna" *ngFor="let lista of beneficios">
-          <h4 class="titulo--tamanho__pequeno m--cor-texto--vermelho">{{ lista.nome }}</h4>
-          <ul>
-            <li *ngFor="let beneficio of lista.beneficios">■ {{ beneficio }}</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-  </section>
-
-  <section class="section contagem">
-
-    <div class="container">
-      <div class="colunas">
-
-        <div class="coluna">
-          <p class="numero m--cor-texto--verde">{{ contagem.alunos }}</p>
-          <p class="nome m--cor-texto--cinza">Alunos</p>
+          </div>
         </div>
 
-        <div class="coluna">
-          <p class="numero m--cor-texto--verde">{{ contagem.educadores }}</p>
-          <p class="nome m--cor-texto--cinza">Educadores</p>
-        </div>
-
-        <div class="coluna">
-          <p class="numero m--cor-texto--verde">{{ contagem.cidades }}</p>
-          <p class="nome m--cor-texto--cinza">Cidades</p>
-        </div>
-
-        <div class="coluna">
-          <p class="numero m--cor-texto--verde">{{ contagem.escolas }}</p>
-          <p class="nome m--cor-texto--cinza">Escolas</p>
-        </div>
 
       </div>
 
-      <hr>
-    </div>
+    </header>
 
-  </section>
+    <section class="section resumo">
 
-  <section class="section contato">
-    [[ CONTATO ]]
-  </section>
+      <div class="container">
+        <div class="colunas">
+          <div style="padding-right: 30px" class="coluna m--grid--estreito m--visibilidade__escondido-mobile">
+            <figure class="imagem">
+              <img src="assets/img/mascote.png" srcset="assets/img/mascote@2x.png 2x" alt="Mascote">
+            </figure>
+          </div>
+          <div class="coluna">
+            <h3 class="titulo--tamanho__medio">Mais segurança e comunicação entre a escola e os pais</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="section features">
+
+      <div class="container">
+        <div class="colunas">
+          <div class="coluna m--grid--8">
+            <p class="titulo--tamanho__grande m--cor-texto--laranja">Controle para os responsáveis</p>
+          </div>
+
+        </div>
+        <ul>
+          <div class="colunas">
+
+            <div class="coluna m--grid--2">
+              <div>
+                <figure class="imagem m--tamanho__96x96">
+                  <img src="assets/img/icone--ocorrencias.svg" alt="Ocorrências">
+                </figure>
+                <h4 class="titulo--tamanho__pequeno">Ocorrências</h4>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s
+                </p>
+              </div>
+
+              <div>
+                <figure class="imagem m--tamanho__96x96">
+                  <img src="assets/img/icone--boletim.svg" alt="Boletim Virtual">
+                </figure>
+                <h4 class="titulo--tamanho__pequeno">Boletim Virtual</h4>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s
+                </p>
+              </div>
+            </div>
+
+
+            <div style="padding: 0 50px" class="coluna m--visibilidade__escondido-mobile">
+                <img src="assets/img/illu-2.svg" alt="Cartão de Acesso">
+            </div>
+
+
+            <div class="coluna m--grid--2">
+              <figure class="imagem m--tamanho__96x96">
+                <img src="assets/img/icone--controle-acesso.svg" alt="Controle de Acesso">
+              </figure>
+              <h4 class="titulo--tamanho__pequeno">Controle de Acesso</h4>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s
+              </p>
+              <figure class="imagem">
+                <img src="assets/img/cartao-acesso.png" srcset="assets/img/cartao-acesso@2x.png 2x" alt="Cartão de Acesso">
+              </figure>
+            </div>
+          </div>
+        </ul>
+      </div>
+
+    </section>
+
+    <section class="section beneficios">
+
+      <div class="container">
+        <div style="text-align: center">
+          <p class="titulo--tamanho__medio">Benefícios Múltiplos para Todas as Partes</p>
+          <p>Resultados comprovados de redução de custos operacionais, aumento na eficiência do controle disciplinar e aumento da participação dos pais e responsáveis no ambiente escolar.</p>
+        </div>
+        <div class="colunas">
+          <div class="beneficio coluna" *ngFor="let lista of beneficios">
+            <h4 class="titulo--tamanho__pequeno m--cor-texto--vermelho">{{ lista.nome }}</h4>
+            <ul>
+              <li *ngFor="let beneficio of lista.beneficios">{{ beneficio }}</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="section contagem">
+
+      <div class="container">
+        <div class="colunas">
+
+          <div class="coluna">
+            <p class="numero m--cor-texto--verde">{{ contagem.alunos }}</p>
+            <p class="nome m--cor-texto--cinza">Alunos</p>
+          </div>
+
+          <div class="coluna">
+            <p class="numero m--cor-texto--verde">{{ contagem.educadores }}</p>
+            <p class="nome m--cor-texto--cinza">Educadores</p>
+          </div>
+
+          <div class="coluna">
+            <p class="numero m--cor-texto--verde">{{ contagem.cidades }}</p>
+            <p class="nome m--cor-texto--cinza">Cidades</p>
+          </div>
+
+          <div class="coluna">
+            <p class="numero m--cor-texto--verde">{{ contagem.escolas }}</p>
+            <p class="nome m--cor-texto--cinza">Escolas</p>
+          </div>
+
+        </div>
+
+        <hr>
+      </div>
+
+    </section>
+
+    <section class="section contato">
+      [[ CONTATO ]]
+    </section>
 
