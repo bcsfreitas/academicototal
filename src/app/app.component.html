@@ -7,7 +7,7 @@
       </h1>
       <div class="colunas">
         <div class="coluna">
-            <h2 class="slogan">Integração da família com a escola</h2>
+            <h2 class="titulo--tamanho__grande">Integração da família com a escola</h2>
             <p>Comunicação em tempo real <br />
               Controle de acesso</p>
 
@@ -29,7 +29,7 @@
       <div class="colunas">
         <div class="coluna m--grid--estreito">a</div>
         <div class="coluna">
-          <h3 class="titulo">Mais segurança e comunicação entre a escola e os pais</h3>
+          <h3 class="titulo--tamanho__medio">Mais segurança e comunicação entre a escola e os pais</h3>
           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
         </div>
       </div>
@@ -40,9 +40,13 @@
   <section class="section features">
 
     <div class="container">
+      <h1 class="titulo--tamanho__grande">Controle para os responsáveis</h1>
       <ul>
         <li *ngFor="let feature of features">
-          <h4>{{ feature.nome }}</h4>
+          <figure class="imagem m--tamanho__96x96">
+            <img src="assets/img/icone--{{ feature.icone }}.svg" alt="">
+          </figure>
+          <h4 class="titulo--tamanho__pequeno">{{ feature.nome }}</h4>
           <p>{{ feature.descricao }}</p>
         </li>
       </ul>
@@ -53,11 +57,15 @@
   <section class="section beneficios">
 
     <div class="container">
+      <div style="text-align: center">
+        <p class="titulo--tamanho__medio">Benefícios Múltiplos para Todas as Partes</p>
+        <p>Resultados comprovados de redução de custos operacionais, aumento na eficiência do controle disciplinar e aumento da participação dos pais e responsáveis no ambiente escolar.</p>
+      </div>
       <div class="colunas">
         <div class="beneficio coluna" *ngFor="let lista of beneficios">
-          <h4>{{ lista.nome }}</h4>
+          <h4 class="titulo--tamanho__pequeno m--cor-texto--vermelho">{{ lista.nome }}</h4>
           <ul>
-            <li *ngFor="let beneficio of lista.beneficios">{{ beneficio }}</li>
+            <li *ngFor="let beneficio of lista.beneficios">■ {{ beneficio }}</li>
           </ul>
         </div>
       </div>

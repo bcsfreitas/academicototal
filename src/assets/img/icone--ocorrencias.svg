@@ -1,0 +1,28 @@
+<svg id="icone--ocorrencias" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 113 108">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #d33131;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        filter: url(#Combined_Shape);
+      }
+    </style>
+    <filter id="Combined_Shape" x="0" y="0" width="113" height="108" filterUnits="userSpaceOnUse">
+      <feOffset dy="6" input="SourceAlpha"/>
+      <feGaussianBlur result="blur"/>
+      <feFlood flood-opacity="0.102"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g class="cls-3" transform="matrix(1, 0, 0, 1, 0, 0)">
+    <path id="Combined_Shape-2" data-name="Combined Shape" class="cls-1" d="M-113,102c16.872,0,25.354-1.46,36.745-11.232A66.82,66.82,0,0,0-56.5,93.712C-25.3,93.712,0,72.734,0,46.856S-25.3,0-56.5,0-113,20.978-113,46.856c0,13.571,6.957,25.794,18.074,34.351C-99.06,89.28-101.318,93.927-113,102Z" transform="translate(113)"/>
+  </g>
+  <path id="Combined_Shape-3" data-name="Combined Shape" class="cls-2" d="M37.857,7.5A7.572,7.572,0,1,1,45.428,15,7.536,7.536,0,0,1,37.857,7.5Zm-18.928,0A7.572,7.572,0,1,1,26.5,15,7.536,7.536,0,0,1,18.929,7.5ZM0,7.5A7.572,7.572,0,1,1,7.572,15,7.536,7.536,0,0,1,0,7.5Z" transform="translate(30 40)"/>
+</svg>

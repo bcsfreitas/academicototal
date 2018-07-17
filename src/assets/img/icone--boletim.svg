@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 141.396 119.475">
+  <defs>
+    <style>
+      .cls-1, .cls-3 {
+        fill: #f6f6ee;
+      }
+
+      .cls-1 {
+        opacity: 0.5;
+      }
+
+      .cls-2 {
+        fill: #7ed321;
+      }
+    </style>
+  </defs>
+  <g id="icone--boletim" transform="translate(-18.302 -16.762)">
+    <g id="Group_7" data-name="Group 7" transform="matrix(0.966, -0.259, 0.259, 0.966, 0.648, 37.584)">
+      <rect id="Rectangle_8" data-name="Rectangle 8" class="cls-1" width="122.105" height="91.636" rx="3" transform="matrix(0.966, 0.259, -0.259, 0.966, 24.391, 0.541)"/>
+      <path id="Path_38_Copy_5" data-name="Path 38 Copy 5" class="cls-2" d="M50.007,1.985a6.266,6.266,0,0,1,9.15,0,7,7,0,0,1,0,9.583L26.574,45.691a6.266,6.266,0,0,1-9.15,0L1.9,29.429a7,7,0,0,1,0-9.583,6.266,6.266,0,0,1,9.15,0L22,31.317Z" transform="translate(37.158 51.455)"/>
+    </g>
+    <g id="Group_7-2" data-name="Group 7" transform="matrix(0.966, -0.259, 0.259, 0.966, 18.302, 48.338)">
+      <rect id="Rectangle_8-2" data-name="Rectangle 8" class="cls-3" width="122" height="91" rx="3"/>
+      <path id="Path_38_Copy_5-2" data-name="Path 38 Copy 5" class="cls-2" d="M49.964,1.971a6.287,6.287,0,0,1,9.142,0,6.925,6.925,0,0,1,0,9.516L26.551,45.374a6.287,6.287,0,0,1-9.142,0L1.893,29.224a6.925,6.925,0,0,1,0-9.516,6.287,6.287,0,0,1,9.142,0L21.98,31.1Z" transform="translate(34.313 22.75)"/>
+    </g>
+  </g>
+</svg>

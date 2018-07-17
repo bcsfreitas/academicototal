@@ -25,6 +25,13 @@
     cursor: not-allowed
 
 
+%block
+  &:not(:last-child)
+    margin-bottom: 1.5rem
+
+=block
+  @extend %block
+
 // Responsividade
 
 =from($device)

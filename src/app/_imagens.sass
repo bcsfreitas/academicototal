@@ -1,0 +1,14 @@
+$dimensoes: 16 24 32 48 64 96 128 !default
+
+.imagem
+  display: inline-block
+  position: relative
+  img
+    display: block
+    height: auto
+    width: 100%
+
+  @each $dimensao in $dimensoes
+    &.m--tamanho__#{$dimensao}x#{$dimensao}
+      height: $dimensao * 1px
+      width: $dimensao * 1px

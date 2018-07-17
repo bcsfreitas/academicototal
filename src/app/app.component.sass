@@ -30,6 +30,8 @@ $variable-colunas: true !default
 @import './functions'
 @import './mixins'
 @import './colunas'
+@import './tipografia'
+@import './imagens'
 
 .botao
   +controle
@@ -97,6 +99,10 @@ $variable-colunas: true !default
 .beneficios
   background: $cor--cinzaClaro
   // margin: 140px 0
+
+.features
+  +mobile
+    text-align: center
 
 .header
   background: url("../assets/img/bg-header.svg") top right no-repeat

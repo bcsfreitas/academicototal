@@ -13,19 +13,19 @@ export class AppComponent {
       nome: 'Ocorrências',
       // tslint:disable-next-line:max-line-length
       descricao: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s',
-      icone: ''
+      icone: 'ocorrencias'
     },
     {
       nome: 'Boletim',
       // tslint:disable-next-line:max-line-length
       descricao: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s',
-      icone: ''
+      icone: 'boletim'
     },
     {
       nome: 'Controle de Acesso',
       // tslint:disable-next-line:max-line-length
       descricao: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s',
-      icone: ''
+      icone: 'controle-acesso'
     },
   ];
 
