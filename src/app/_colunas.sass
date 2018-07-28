@@ -437,10 +437,11 @@ $column-gap: 0.75rem !default
     margin-bottom: (-$column-gap)
   &:not(:last-child)
     margin-bottom: calc(1.5rem - #{$column-gap})
+
   // Modifiers
-  &.m--grid--centered
+  &.m--grid--centralizado
     justify-content: center
-  &.m--grid--gapless
+  &.m--grid--sem-gap
     margin-left: 0
     margin-right: 0
     margin-top: 0
@@ -455,7 +456,7 @@ $column-gap: 0.75rem !default
     display: flex
   &.m--grid--multiline
     flex-wrap: wrap
-  &.m--grid--vcentered
+  &.m--grid--v-centralizado
     align-items: center
   // Responsiveness
   +tablet

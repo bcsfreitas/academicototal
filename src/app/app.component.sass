@@ -10,7 +10,7 @@ $cores: ("cinzaClaro": $cor--cinzaClaro, "cinza": $cor--cinza, "amarelo": $cor--
 // The container horizontal gap, which acts as the offset for breakpoints
 $gap: 64px !default
 // 960, 1152, and 1344 have been chosen because they are divisible by both 12 and 16
-$tablet: 769px !default
+$tablet: 768px !default
 // 960px container + 4rem
 $desktop: 960px + (2 * $gap) !default
 // 1152px container + 4rem
@@ -20,12 +20,12 @@ $widescreen-enabled: true !default
 $fullhd: 1344px + (2 * $gap) !default
 $fullhd-enabled: true !default
 
-// Flags
 
+// Flags
 $variable-colunas: true !default
 
 
-@import './src/assets/fonts/museo-sans/font.sass'
+@import '../assets/fonts/museo-sans/font.sass'
 @import './minireset'
 @import './functions'
 @import './mixins'
@@ -33,6 +33,7 @@ $variable-colunas: true !default
 @import './tipografia'
 @import './imagens'
 @import './helpers'
+@import './input'
 
 .botao
   +controle
@@ -54,25 +55,40 @@ $variable-colunas: true !default
   background-color: $cor--amarelo
   color: findColorInvert($cor--amarelo)
 
+  border: 0
+
   // Cores
   @each $nomeCor, $cor in $cores
     &.m--cor--#{$nomeCor}
       background-color: $cor
       color: findColorInvert($cor)
 
+.submit
+  display: flex
+  justify-content: flex-end
 
+.form-contato__img
+  align-items: flex-end
+  display: flex
+  justify-content: flex-end
+  margin-top: 160px
+  padding: 0
+
+// Loop color
 @each $nomeCor, $cor in $cores
   .m--cor-texto--#{$nomeCor}
     color: $cor
 
-
+.section
+  padding: 3rem 1.5rem
 .container
   margin: 0 auto
   position: relative
+
   +desktop
     max-width: $desktop - (2 * $gap)
     width: $desktop - (2 * $gap)
-    &.m--fluido
+    &.m--fluid
       margin-left: $gap
       margin-right: $gap
       max-width: none
@@ -91,9 +107,6 @@ $variable-colunas: true !default
   +fullhd
     max-width: $fullhd - (2 * $gap)
     width: $fullhd - (2 * $gap)
-
-.section
-  padding: 3rem 1.5rem
 
 
 
@@ -131,7 +144,7 @@ $variable-colunas: true !default
   .ilustracao
     margin-bottom: -60px
 
-  +touch
+  +mobile
     text-align: center
     background-position-y: 0px
     background-size: 220%
@@ -170,5 +183,5 @@ $variable-colunas: true !default
     font-size: 30px
     text-transform: uppercase
 
-  +touch
+  +mobile
     text-align: center

@@ -1,3 +1,9 @@
+*, :after, :before {
+  box-sizing: border-box;
+  font-family: 'MuseoSansRounded', Helvetica, Arial, sans-serif !important;
+  outline: none !important;
+}
+
 html, body {
   margin: 0;
   padding: 0;
